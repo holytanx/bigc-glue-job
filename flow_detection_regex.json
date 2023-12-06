@@ -1,0 +1,94 @@
+[
+  {
+    "regexes": [
+      "ไม่ทราบว่าต้องการให้บิ๊กกี้ดูแลเพิ่มเติมเรื่องใด สามารถเลือกจากเมนูด้านล่างได้เลยคร้าบ",
+      "Is there anything else that you would like me to help with? You can select the menus below."
+    ],
+    "flow": "FAIL_MENU"
+  },
+  {
+    "regexes": [
+      "วันนี้ต้องการให้บิ๊กกี้ดูแลเรื่องใด สามารถเลือกจากเมนูด้านล่างได้เลยคร้าบ",
+      "Greetings from Big C Contact Center! I’m Biggy. How can I help you?"
+    ],
+    "flow": "START_CONVERSATION"
+  },
+  {
+    "regexes": [
+      "ขอบคุณที่ติดต่อ Big C Contact Center หากท่านมีข้อสงสัยอื่นๆ สามารถติดต่อบิ๊กกี้ได้ตลอด 24 ชม.",
+      "Thank you for contacting us. For any other inquiries, you can contact Biggy 24/7"
+    ],
+    "flow": "END_CONVERSATION"
+  },
+  {
+    "regexes": [
+      "รบกวนรอสักครู่คร้าบ บิ๊กกี้ขอแจ้งพี่พนักงานให้เข้ามาดูแลครับ",
+      "Let me ask my live agent colleague to take care of you, please wait for a moment.",
+      "ขออภัยครับ บิ๊กกี้ขออนุญาตส่งแชทให้พี่พนักงานเข้ามาดูแลต่อนะครับ รบกวนรอสักครู่คร้าบ"
+    ],
+    "flow": "OPEN_TICKET_BH"
+  },
+  {
+    "regexes": [
+      "ขออภัยครับ ขณะนี้อยู่นอกเวลาทำการ พี่พนักงานจะเข้ามาดูแลท่านตั้งแต่เวลา 08.00 น. เป็นต้นไป สามารถพิมพ์ข้อความที่ต้องการสอบถามไว้ได้เลยคร้าบ",
+      "Sorry, it is now outside our operating hours. Our live agents will be back tomorrow, from 8.00 AM onwards. You may type your query in the text field."
+    ],
+    "flow": "OPEN_TICKET_NON_BH"
+  },
+  {
+    "regexes": [
+      "Is there anything else that you would like me to help with?",
+      "ไม่ทราบว่ามีเรื่องอื่นให้บิ๊กกี้ดูแลเพิ่มเติมไหมครับ"
+    ],
+    "flow": "DELAY_15"
+  },
+  {
+    "regexes": [
+      "ช่วยทำแบบประเมินความพึงพอใจในการให้ข้อมูลของบิ๊กกี้ในครั้งนี้ด้วยนะคร้าบ",
+      "Please rate your satisfaction with Biggy’s service."
+    ],
+    "flow": "SURVEY_BOT"
+  },
+  {
+    "regexes": [
+      "บิ๊กซีขอขอบคุณสำหรับการทำแบบประเมิน\n\nหากท่านมีข้อเสนอแนะต่อบริการของบิ๊กกี้สามารถกดปุ่ม",
+      "Thank you for your feedback. If you have any suggestion regarding Biggy’s service, please click"
+    ],
+    "flow": "SURVEY_BOT_ASK_FOR_COMMENT"
+  },
+  {
+    "regexes": [
+      "Thank you for your suggestion. If you have any further suggestions regarding Biggy’s service, please click",
+      "บิ๊กซีขอขอบคุณสำหรับข้อเสนอแนะของท่าน หากท่านมีข้อเสนอแนะเพิ่มเติมต่อบริการของบิ๊กกี้สามารถกดปุ่ม"
+    ],
+    "flow": "SURVEY_BOT_ASK_FOR_MORE_COMMENT"
+  },
+  {
+    "regexes": [
+      "ท่านสามารถพิมพ์ข้อเสนอแนะเพิ่มเติมได้ในช่องข้อความ",
+      "Please type your suggestion in the text field."
+    ],
+    "flow": "SURVEY_COMMENT"
+  },
+  {
+    "regexes": [
+      "กรุณาให้คะแนนความพึงพอใจในการให้บริการของแอดมินในครั้งนี้",
+      "Please rate your satisfaction with the admin’s service."
+    ],
+    "flow": "SURVEY_AGENT"
+  },
+  {
+    "regexes": [
+      "Thank you for your feedback. If you have any suggestion regarding admin’s service, please click",
+      "บิ๊กซีขอขอบคุณสำหรับการทำแบบประเมิน\n\nหากท่านมีข้อเสนอแนะต่อบริการของแอดมินสามารถกดปุ่ม"
+    ],
+    "flow": "SURVEY_AGENT_ASK_FOR_COMMENT"
+  },
+  {
+    "regexes": [
+      "บิ๊กซีขอขอบคุณสำหรับข้อเสนอแนะของท่าน หากท่านมีข้อเสนอแนะเพิ่มเติมต่อบริการของแอดมินสามารถกดปุ่ม",
+      "Thank you for your suggestion. If you any have any further suggestions regarding admin’s service, please click"
+    ],
+    "flow": "SURVEY_AGENT_ASK_FOR_MORE_COMMENT"
+  }
+]
